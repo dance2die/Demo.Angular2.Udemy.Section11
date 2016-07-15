@@ -1,5 +1,5 @@
 import {Component} from 'angular2/core';
-import {RouteConfig, RouterLink, ROUTER_DIRECTIVES} from 'angular2/router';
+import {RouteConfig, RouterLink, ROUTER_DIRECTIVES, ROUTER_PROVIDERS} from 'angular2/router';
 // import {HomeComponent} from "./HomeComponent";
 // import {UsersComponent} from "./users.component";
 // import {PostsComponent} from "./posts.component";
@@ -7,7 +7,8 @@ import {RouteConfig, RouterLink, ROUTER_DIRECTIVES} from 'angular2/router';
 @Component({
     selector: 'navbar',
     templateUrl: 'app/navbar.component.html',
-    directives: [ROUTER_DIRECTIVES, RouterLink]
+    directives: [ROUTER_DIRECTIVES, RouterLink],
+    providers: [ROUTER_PROVIDERS]
 })
 // @RouteConfig([
 //     {path: '/', name: 'Home', component: HomeComponent, useAsDefault: true},
