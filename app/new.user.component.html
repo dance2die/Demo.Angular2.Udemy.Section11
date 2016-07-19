@@ -1,20 +1,20 @@
 <h1>Add a User</h1>
 
 <div class="col-md-6 col-lg-6 well">
-    <form>
+    <form [ngFormModel]="signupForm">
         <fieldset>
             <legend>User</legend>
             <div class="form-group">
                 <label for="name">Name</label>
-                <input ng-control="name" id="name" type="text" class="form-control">
+                <input ngControl="name" id="name" type="text" class="form-control">
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input ng-control="email" id="email" type="text" class="form-control">
+                <input ngControl="email" id="email" type="text" class="form-control">
             </div>
             <div class="form-group">
                 <label for="phone">Phone</label>
-                <input ng-control="phone" id="phone" type="text" class="form-control">
+                <input ngControl="phone" id="phone" type="text" class="form-control">
             </div>
         </fieldset>
         <fieldset>
@@ -22,19 +22,19 @@
         </fieldset>
         <div class="form-group">
             <label for="street">Street</label>
-            <input ng-control="street" id="street" type="text" class="form-control">
+            <input ngControl="street" id="street" type="text" class="form-control">
         </div>
         <div class="form-group">
             <label for="suite">Suite</label>
-            <input ng-control="suite" id="suite" type="text" class="form-control">
+            <input ngControl="suite" id="suite" type="text" class="form-control">
         </div>
         <div class="form-group">
             <label for="city">City</label>
-            <input ng-control="city" id="city" type="text" class="form-control">
+            <input ngControl="city" id="city" type="text" class="form-control">
         </div>
         <div class="form-group">
             <label for="zipCode">ZipCode</label>
-            <input ng-control="zipCode" id="zipCode" type="text" class="form-control">
+            <input ngControl="zipCode" id="zipCode" type="text" class="form-control">
         </div>
 
         <button id="save" class="btn btn-primary">Save</button>
